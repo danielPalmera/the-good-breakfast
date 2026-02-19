@@ -1,2 +1,137 @@
-
-<!-- Your content goes here ↓↓↓ -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Good Breakfast</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-content">
+                <a class="nav-logo" href="#">The <span style="color:#91d8aa">Good</span> Breakfast</a>
+                <div class="nav-links">
+                    <a href="#">HOME</a>
+                    <a href="#about">ABOUT US</a>
+                    <a href="#menu">DAILY OFFER</a>
+                    <a href="#reservas">CONTACT US</a>
+                </div>
+            </div>
+        </nav>
+        <header class="hero">
+            <div class="hero-container br20">
+            <h1>The <span style="color:#91d8aa;">Good</span> Breakfast</h1>
+            <p>Here you will find all sorts of delicious treats</p>
+            </div>
+        </header>
+        <section class="section" id="about">
+            <h2 class="section-title">About Us</h2>
+            <div class="about br20">
+                <div class="about-text">
+                    <p>Our commitment is to use impeccable sourcing and <strong>quality ingredients</strong> to help you code. An ongoing collaboration between the classroom staff and the development team allow us to iterate our content and give our students the coding 'fruits and vegetables' — mainly made of JavaScript — that they need to grow as a healthy developer.</p>
+                    <cite>"Good code &amp; good coffee, everyday"</cite>
+                </div>
+                <div class="about-image">
+                    <figure>
+                        <img  class="br20" src="assets/img/fondo-min.jpg" alt="Fotografia de diversos platilos de desayuno">
+                        <figcaption>powered by biscuit</figcaption>
+                    </figure>
+                </div>
+                <div class="about-video">
+                    <video controls muted>
+                        <source src="assets/video/breakfast.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section class="menu-section-decoration"></section>
+        <section class="menu-section" id="menu">
+            <h2 class="section-title">Menu</h2>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Cafés</th>
+                        <th>Tés</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Café Latte</td>
+                        <td>Earl Grey</td>
+                    </tr>
+                    <tr>
+                        <td>Americano</td>
+                        <td>Green Tea</td>
+                    </tr>
+                    <tr>
+                        <td>Macchiato</td>
+                        <td>Rooibos</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="section" id="reservas">
+            <div class="reservas">
+                <h3>Reservas Aquí</h3>
+                <form action="">
+                    <label for="name2">Name</label>
+                    <input id="name2" type="text" placeholder="Tu nombre">
+                    <label for="sob2">Snack o Breakfast</label>
+                    <select name="sob" id="sob2">
+                        <option disabled selected>Select a option</option>
+                        <option>Snack</option>
+                        <option>Breakfast</option>
+                    </select>
+                    <label for="cant2" title="Cantidad de personas">Number of diners</label>
+                    <select name="cant" id="cant2">
+                        <option disabled selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <button title="Reservar" type="button">Reserve</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <a href="mailto:info@thegoodbreakfast.com">info@thegoodbreakfast.com</a>
+                    <h4>Referencias</h4>
+                    <ul>
+                        <li><a href="https://welcomebreak.co.uk/brands/the-good-breakfast/">welcomebreak.co.uk</a></li>
+                        <li><a href="https://dribbble.com/shots/22745018-Barista-Essentials-Brand-Redesign">Barista-Essentials-Brand-Redesign</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h3>Opening Hours</h3>
+                    <table class="hours-table">
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>7:00 AM - 3:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>8:00 AM - 4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>9:00 AM - 2:00 PM</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>From the oven with love</p>
+                
+            </div>
+        </footer>
+    </body>
+</html>
