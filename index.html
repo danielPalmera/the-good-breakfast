@@ -3,34 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>The Good Breakfast</title>
+        <title>Urban Toast</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <body>
-        <nav>
-            <div class="nav-content">
-                <a class="nav-logo" href="#">The <span style="color:#91d8aa">Good</span> Breakfast</a>
-                <div class="nav-links">
-                    <a href="#">HOME</a>
-                    <a href="#about">ABOUT US</a>
-                    <a href="#menu">DAILY OFFER</a>
-                    <a href="#reservas">CONTACT US</a>
-                </div>
-            </div>
-        </nav>
         <header class="hero">
+            <nav>
+                <div class="nav-content">
+                    <a class="nav-logo" href="#">The <span style="color:#91d8aa">Good</span> Breakfast</a>
+                    <ul class="nav-links">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#menu">DAILY OFFER</a></li>
+                        <li><a href="#reservas">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </nav>
             <div class="hero-container br20">
-            <h1>The <span style="color:#91d8aa;">Good</span> Breakfast</h1>
-            <p>Here you will find all sorts of delicious treats</p>
+                <h1>The <span style="color:#91d8aa;">Good</span> Breakfast</h1>
+                <p>Here you will find all sorts of delicious treats</p>
             </div>
         </header>
+        <main>
         <section class="section" id="about">
             <h2 class="section-title">About Us</h2>
             <div class="about br20">
                 <div class="about-text">
                     <p>Our commitment is to use impeccable sourcing and <strong>quality ingredients</strong> to help you code. An ongoing collaboration between the classroom staff and the development team allow us to iterate our content and give our students the coding 'fruits and vegetables' — mainly made of JavaScript — that they need to grow as a healthy developer.</p>
-                    <cite>"Good code &amp; good coffee, everyday"</cite>
+                    <blockquote>"Good code &amp; good coffee, everyday"</blockquote>
                 </div>
                 <div class="about-image">
                     <figure>
@@ -78,27 +79,28 @@
         <section class="section" id="reservas">
             <div class="reservas">
                 <h3>Reservas Aquí</h3>
-                <form>
-                    <label for="name2">Name</label>
-                    <input id="name2" type="text" placeholder="Tu nombre">
+                <form method="post" action="#">
+                    <label for="name2" required>Name</label>
+                    <input id="name2" type="text" placeholder="Tu nombre" required>
                     <label for="sob2">Snack o Breakfast</label>
-                    <select name="sob" id="sob2">
-                        <option disabled selected>Select a option</option>
+                    <select name="sob" required id="sob2">
+                        <option disabled selected>Select an option</option>
                         <option>Snack</option>
                         <option>Breakfast</option>
                     </select>
                     <label for="cant2" title="Cantidad de personas">Number of diners</label>
-                    <select name="cant" id="cant2">
-                        <option disabled selected>0</option>
+                    <select name="cant" id="cant2" required>
+                        <option disabled selected>Select an option</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                     </select>
-                    <button title="Reservar" type="button">Reserve</button>
+                    <button type="submit">Reserve</button>
                 </form>
             </div>
         </section>
+        </main>
         <footer>
             <div class="footer-content">
                 <div class="footer-contact">

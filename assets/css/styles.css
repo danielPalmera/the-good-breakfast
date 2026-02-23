@@ -16,8 +16,10 @@
 
     nav {
         background-color:  #120e0f  ;
-        position: sticky;
+        position: fixed;
         top: 0;
+        left: 0;
+        width: 100%;
         z-index: 100;
         padding: 0 20px;
     }
@@ -36,8 +38,20 @@
         text-decoration: none;
     }
     .nav-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
         display: flex;
         gap: 25px;
+    }
+
+    /* Ensure content is not hidden under the fixed nav */
+    body {
+        font-family: "Roboto", sans-serif;
+        color: #120e0f  ;
+        line-height: 1.6;
+        background-color: #fbf0e5;
+        padding-top: 64px; /* height of nav (approx) */
     }
     .nav-links a {
         color: #dfdcd4;
